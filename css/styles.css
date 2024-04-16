@@ -173,7 +173,8 @@ ul {
   padding-bottom: 20px;
 }
 
-.contacts-link:hover {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -392,11 +393,30 @@ ul {
 
 .clients-item {
   width: 170px;
-  /* height: 92px; */
+  height: 92px;
 }
 
-.clients-pic {
-  display: block;
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* footer */
@@ -473,7 +493,28 @@ ul {
 .follow-item {
   width: 44px;
   height: 44px;
-  background-color: var(--gray-color);
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--primary-white-color);
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* portfolio page styles */
@@ -505,6 +546,8 @@ ul {
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: var(--accent-color);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
   color: var(--primary-white-color);
 }
 
@@ -521,7 +564,12 @@ ul {
 
 .cards-item {
   width: 370px;
-  /* height: 404px; */
+}
+
+.cards-item:hover,
+.cards-link:focus {
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .carts-pic {
