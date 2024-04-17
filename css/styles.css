@@ -428,7 +428,7 @@ ul {
 
 .footer-container {
   display: flex;
-  /* align-items: center; */
+  align-items: baseline;
 }
 
 .footer-nav {
@@ -566,8 +566,13 @@ ul {
   width: 370px;
 }
 
-.cards-item:hover,
+.cards-link {
+  display: block;
+}
+
+.cards-link:hover,
 .cards-link:focus {
+  width: 100%;
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
